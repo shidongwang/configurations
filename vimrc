@@ -50,13 +50,11 @@ if &t_Co > 2 || has("gui_running")
 endif
 " }}}
 
-
-
 filetype plugin on
 filetype plugin indent on
 
-map <Space> <PageDown>
-map <CTRL-b> <PageUp>
+noremap <Space> <PageDown>
+noremap <c-b> <PageUp>
 
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
